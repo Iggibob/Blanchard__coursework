@@ -1,0 +1,8 @@
+@import "normalize.css";
+@import "main.css";
+@import "header.css";
+@import "hero.css";
+@import "about.css";
+
+@import url("https://unpkg.com/simplebar@latest/dist/simplebar.css");
+

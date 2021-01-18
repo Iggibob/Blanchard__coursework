@@ -1,0 +1,29 @@
+.about {
+	margin-bottom: 50px;
+}
+
+.about__descr {
+	font-size: 87.5%;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 768px) {
+	.about {
+		margin-bottom: 80px;
+	}
+
+	.about__title {
+		margin-bottom: 21px;
+	}
+	
+	.about__descr {
+		font-size: var(--size-text);
+    line-height: 2rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.about__descr {
+		max-width: 1090px;
+	}
+}
