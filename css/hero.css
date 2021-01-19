@@ -26,7 +26,7 @@
 	padding-bottom: 45px;
 	width: 100%;
 }
-/* @keyframes pulse {
+@keyframes pulse {
   0% { background-size: 100% 100%;}
   50% { background-size: 120% 120%; }
   100% { background-size: 100% 100%; }
@@ -35,7 +35,7 @@
   0% { background-size: 100% 100%;}
   50% { background-size: 120% 120%; }
   100% { background-size: 100% 100%; }
-} */
+}
 
 .hero__title {
 	max-width: 250px;
