@@ -56,15 +56,31 @@
 .hero__btn {
 	padding: 11px 21px;
 	color: var(--color-white);
-  background-color: var(--color-purple);
+	background-color: var(--color-purple);
+	
+	
+	transition-property: border-color, background-color;
+	transition-duration: 0.3s, 0.2s;
+	transition-delay: 0s, 0s;
+
+	-webkit-transition-property: border-color, background-color;
+	-webkit-transition-duration: 0.3s, 0.2s;
+	-webkit-transition-delay: 0s, 0s;
+
+	-moz-transition-property: border-color, background-color;
+	-moz-transition-duration: 0.3s, 0.2s;
+	-moz-transition-delay: 0s, 0s;
+
+	-o-transition-property: border-color, background-color;
+	-o-transition-duration: 0.3s, 0.2s;
+	-o-transition-delay: 0s, 0s;
 }
 
 /* .hero__btn:hover {
   border-color: #D1A9F0;
 } */
 .hero__btn:focus {
-	border-color: #D1A9F0;
-	background-color: #7943A4;
+	border-color: #7943A4;
   outline: none;
 }
 .hero__btn:active {
