@@ -18,6 +18,8 @@ window.addEventListener('DOMContentLoaded', function () {
 						top = $(id).offset().top;
 				$('body,html').animate({scrollTop: top}, 1000);
 		});
+
+		
 	});
 
 	// Header burger-menu
@@ -27,27 +29,13 @@ window.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.burger-close').addEventListener('click', function () {
     document.getElementById('burgerMenu').style.transform = 'translateX(-101%)';
 	});
+
+	// Header search-menu
+	document.querySelector('.search__btn').addEventListener('click', function () {
+    document.getElementById("headerSearchMenu").classList.toggle("show");
+	});
+	document.querySelector('.search-close').addEventListener('click', function () {
+    document.getElementById("headerSearchMenu").classList.remove("show");
+  });
 	
 });
-
-
-/* When the user clicks on the button, 
-		toggle between hiding and showing the Header search-menu */
-		function myFunction() {
-			document.getElementById("headerSearchMenu").classList.toggle("search-show");
-	}
-	
-	// Close the Header search-menu if the user clicks outside of it
-	window.onclick = function(event) {
-	if (!event.target.matches('.search__btn')) {
-
-		var dropdowns = document.getElementsByClassName("search__block");
-		var i;
-		for (i = 0; i < dropdowns.length; i++) {
-			var openDropdown = dropdowns[i];
-			if (openDropdown.classList.contains('search-show')) {
-				openDropdown.classList.remove('search-show');
-			}
-		}
-	}
-}
