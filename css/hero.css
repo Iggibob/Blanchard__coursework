@@ -54,9 +54,10 @@
 }
 
 .hero__btn {
-	padding: 11px 21px;
+	padding: 9px 19px;
 	color: var(--color-white);
 	background-color: var(--color-purple);
+	border-width: 3px;
 	
 	
 	transition-property: border-color, background-color;
@@ -115,13 +116,13 @@
 	
 	.hero__descr {
 		max-width: 660px;
-    margin-bottom: 135px;
+    margin-bottom: 134px;
     font-size: var(--size-nav);
     line-height: 1.875rem;
 	}
 	
 	.hero__btn {
-		padding: 25px 40px;
+		padding: 24px 37px;
 	}
 	
 	.hero__btn:hover {
