@@ -39,15 +39,16 @@
 
 .hero__title {
 	max-width: 250px;
-  margin-bottom: 11px;
+  margin-bottom: 12px;
   font-size: 210%;
+  font-weight: 700;
   line-height: 2.38rem;
   color: var(--color-white);
 }
 
 .hero__descr {
 	max-width: 265px;
-  margin-bottom: 42px;
+  margin-bottom: 41px;
   font-size: var(--size-text-little);
   line-height: 1rem;
   color: var(--color-white);
@@ -102,16 +103,15 @@
 	}
 
 	.hero__container {
-		padding-top: 215px;
+		padding-top: 213px;
 		align-items: flex-start;
 		text-align: left;
 	}
 	
 	.hero__title {
-		max-width: 585px;
+	max-width: 585px;
     font-size: 450%;
     line-height: 5.13rem;
-    font-weight: 600;
 	}
 	
 	.hero__descr {
@@ -119,6 +119,7 @@
     margin-bottom: 134px;
     font-size: var(--size-nav);
     line-height: 1.875rem;
+    font-weight: 700;
 	}
 	
 	.hero__btn {
@@ -152,6 +153,6 @@
 	
 	.hero__descr {
 		max-width: 570px;
-    margin-bottom: 93px;
+    margin-bottom: 92px;
 	}
 }

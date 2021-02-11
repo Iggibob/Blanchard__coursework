@@ -285,6 +285,7 @@
 
 	.nav__link {
 		font-size: var(--size-nav);
+		font-weight: 600;
 		color: var(--color-white);
 
 		transition-property: color, outline;
@@ -560,7 +561,7 @@
 
 	.nav__item:not(:last-child) {
 		margin-bottom: 0;
-		margin-right: 65px;
+		margin-right: 64px;
 	}
 	
 	.nav__link,
