@@ -214,15 +214,76 @@
 		</section>
 
 		<section class="gallery" id="gallery">
-			<div class="container gallery__container">
-				<h2 class="title gallery__title">Галерея</h2>
-			</div>
+			<div class="gallery__block">
+        <div class="container gallery__container">
+          <h2 class="title gallery__title">Галерея</h2>
+
+					<!-- choices -->
+					<div class="gallery__select">
+						<p class="gallery__select-heading">Фильтровать&nbsp;по:</p>
+						<select name="select" id="gallerySelectCustom">
+							<option value="value1" data-id="1">Автор</option>
+							<option value="value2" data-id="2">Направление</option>
+							<option value="value3" data-id="3">Техника</option>
+						</select>
+					</div>
+
+					<!-- Slider main container -->
+					<div class="swiper-container gallery-swiper">
+						<!-- Additional required wrapper -->
+						<ul class="list-reset swiper-wrapper">
+							<!-- Slides -->
+							<li class="swiper-slide gallery__slide gallery__slide1"></li>
+							<li class="swiper-slide gallery__slide gallery__slide2"></li>
+							<li class="swiper-slide gallery__slide gallery__slide3"></li>
+							<li class="swiper-slide gallery__slide gallery__slide4"></li>
+							<li class="swiper-slide gallery__slide gallery__slide5"></li>
+							<li class="swiper-slide gallery__slide gallery__slide6"></li>
+							<li class="swiper-slide gallery__slide gallery__slide7"></li>
+							<li class="swiper-slide gallery__slide gallery__slide8"></li>
+							<li class="swiper-slide gallery__slide gallery__slide9"></li>
+							<li class="swiper-slide gallery__slide gallery__slide10"></li>
+							<li class="swiper-slide gallery__slide gallery__slide11"></li>
+							<li class="swiper-slide gallery__slide gallery__slide12"></li>
+							<li class="swiper-slide gallery__slide gallery__slide13"></li>
+							<li class="swiper-slide gallery__slide gallery__slide14"></li>
+							<li class="swiper-slide gallery__slide gallery__slide15"></li>
+							<li class="swiper-slide gallery__slide gallery__slide16"></li>
+							<li class="swiper-slide gallery__slide gallery__slide17"></li>
+							<li class="swiper-slide gallery__slide gallery__slide18"></li>
+							<li class="swiper-slide gallery__slide gallery__slide19"></li>
+							<li class="swiper-slide gallery__slide gallery__slide20"></li>
+							<li class="swiper-slide gallery__slide gallery__slide21"></li>
+							<li class="swiper-slide gallery__slide gallery__slide22"></li>
+							<li class="swiper-slide gallery__slide gallery__slide23"></li>
+							<li class="swiper-slide gallery__slide gallery__slide24"></li>
+							<li class="swiper-slide gallery__slide gallery__slide25"></li>
+							<li class="swiper-slide gallery__slide gallery__slide26"></li>
+							<li class="swiper-slide gallery__slide gallery__slide27"></li>
+							<li class="swiper-slide gallery__slide gallery__slide28"></li>
+							<li class="swiper-slide gallery__slide gallery__slide29"></li>
+							<li class="swiper-slide gallery__slide gallery__slide30"></li>
+						</ul>
+						<!-- If we need pagination -->
+						<div class="swiper-pagination"></div>
+						<!-- If we need navigation buttons -->
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+						<!-- If we need scrollbar -->
+						<!-- <div class="swiper-scrollbar"></div> -->
+					</div>
+
+          <p class="descr gallery__descr">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="" class="link-reset gallery__descr--link">авторизуйтесь</a>, либо воспользуйтесь лицензией.</p>
+        </div>
+      </div>
 		</section>
+
 		<section class="catalog" id="catalog">
 			<div class="container catalog__container">
 				<h2 class="title catalog__title">Каталог</h2>
 			</div>
 		</section>
+		
 		<section class="event" id="event">
 			<div class="container event__container">
 				<h2 class="title event__title">События</h2>
@@ -249,9 +310,13 @@
 	
 	<!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-	<!-- scroll -->
+	<!-- scroll simplebar -->
 	<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
-	
+	<!-- Gallery Choices -->
+	<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+	<!-- Gallery Slider -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 	<script src="js/main.js"></script>
 </body>
 </html>
