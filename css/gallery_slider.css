@@ -1,0 +1,376 @@
+.swiper-container {
+  width: 290px;
+  height: 417px;
+}
+
+.gallery__slide {
+  height: 367px;
+  background-repeat: no-repeat;
+	background-position: center center;
+	background-color: transparent;
+	background-size: cover;
+  border: 3px solid #7943A4;
+  cursor: pointer;
+}
+
+
+.gallery__slide::after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  height: 311px;
+  width: 234px;
+  background: url(../img/gallery/gallery_slide_increase.svg) center center no-repeat rgba(0, 0, 0, 0.5);
+  background-size: 80px 80px ;
+  visibility: hidden;
+  opacity: 0;
+
+  transition-property: opacity, visibility;
+	transition-duration: 0.2s, 0.2s;
+	transition-delay: 0.2s, 0.1s;
+  -webkit-transition-property: opacity, visibility;
+	-webkit-transition-duration: 0.2s, 0.2s;
+	-webkit-transition-delay: 0.2s, 0.1s;
+  -moz-transition-property: opacity, visibility;
+	-moz-transition-duration: 0.2s, 0.2s;
+	-moz-transition-delay: 0.2s, 0.1s;
+  -o-transition-property: opacity, visibility;
+	-o-transition-duration: 0.2s, 0.2s;
+	-o-transition-delay: 0.2s, 0.1s;
+
+}
+
+.gallery__slide:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+.swiper-pagination {
+  color: var(--color-white);
+  bottom: 5px;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  height: 18px;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 98%;
+  width: 30px;
+  height: 30px;
+}
+.swiper-button-prev {
+  left: 80px;
+  background: url(../img/gallery/gallery_slider_icon.svg) center center no-repeat transparent;
+}
+.swiper-button-next {
+  right: 80px;
+  background: url(../img/gallery/gallery_slider_icon.svg) center center no-repeat transparent;
+  transform: rotate(180deg);
+}
+
+.swiper-button-next:after, .swiper-button-prev::after {
+  font-variant: none;
+}
+
+.gallery__slide1 {
+  background-image: url(../img/gallery/gallery_mob_1.jpg);
+}
+.gallery__slide2 {
+  background-image: url(../img/gallery/gallery_mob_2.jpg);
+}
+.gallery__slide3 {
+  background-image: url(../img/gallery/gallery_mob_3.jpg);
+}
+.gallery__slide4 {
+  background-image: url(../img/gallery/gallery_mob_4.jpg);
+}
+.gallery__slide5 {
+  background-image: url(../img/gallery/gallery_mob_5.jpg);
+}
+.gallery__slide6 {
+  background-image: url(../img/gallery/gallery_mob_6.jpg);
+}
+.gallery__slide7 {
+  background-image: url(../img/gallery/gallery_mob_7.jpg);
+}
+.gallery__slide8 {
+  background-image: url(../img/gallery/gallery_mob_8.jpg);
+}
+.gallery__slide9 {
+  background-image: url(../img/gallery/gallery_mob_9.jpg);
+}
+.gallery__slide10 {
+  background-image: url(../img/gallery/gallery_mob_10.jpg);
+}
+.gallery__slide11 {
+  background-image: url(../img/gallery/gallery_mob_11.jpg);
+}
+.gallery__slide12 {
+  background-image: url(../img/gallery/gallery_mob_12.jpg);
+}
+.gallery__slide13 {
+  background-image: url(../img/gallery/gallery_mob_13.jpg);
+}
+.gallery__slide14 {
+  background-image: url(../img/gallery/gallery_mob_14.jpg);
+}
+.gallery__slide15 {
+  background-image: url(../img/gallery/gallery_mob_15.jpg);
+}
+.gallery__slide16 {
+  background-image: url(../img/gallery/gallery_mob_16.jpg);
+}
+.gallery__slide17 {
+  background-image: url(../img/gallery/gallery_mob_17.jpg);
+}
+.gallery__slide18 {
+  background-image: url(../img/gallery/gallery_mob_18.jpg);
+}
+.gallery__slide19 {
+  background-image: url(../img/gallery/gallery_mob_19.jpg);
+}
+.gallery__slide20 {
+  background-image: url(../img/gallery/gallery_mob_20.jpg);
+}
+.gallery__slide21 {
+  background-image: url(../img/gallery/gallery_mob_21.jpg);
+}
+.gallery__slide22 {
+  background-image: url(../img/gallery/gallery_mob_22.jpg);
+}
+.gallery__slide23 {
+  background-image: url(../img/gallery/gallery_mob_23.jpg);
+}
+.gallery__slide24 {
+  background-image: url(../img/gallery/gallery_mob_24.jpg);
+}
+.gallery__slide25 {
+  background-image: url(../img/gallery/gallery_mob_25.jpg);
+}
+.gallery__slide26 {
+  background-image: url(../img/gallery/gallery_mob_26.jpg);
+}
+.gallery__slide27 {
+  background-image: url(../img/gallery/gallery_mob_27.jpg);
+}
+.gallery__slide28 {
+  background-image: url(../img/gallery/gallery_mob_28.jpg);
+}
+.gallery__slide29 {
+  background-image: url(../img/gallery/gallery_mob_29.jpg);
+}
+.gallery__slide30 {
+  background-image: url(../img/gallery/gallery_mob_30.jpg);
+}
+
+
+
+@media (min-width: 768px) {
+  .swiper-container {
+    width: 668px;
+    height: 654px;
+    padding-top: 60px;
+  }
+
+  .gallery__slide {
+    height: 280px;
+    /* width: 317px; */
+  }
+
+  .swiper-pagination {
+    bottom: 0;
+    top: 7px;
+    left: 45px;
+    text-align: start;
+  }
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 3.3%;
+    width: 30px;
+    height: 30px;
+  }
+  .swiper-button-prev {
+    left: 0px;
+  }
+  .swiper-button-next {
+    left: 100px;
+    right: 0;
+  }
+
+  
+  .gallery__slide::after {
+    height: 224px;
+    width: 261px;
+}
+
+
+}
+
+
+@media (min-width: 1024px) {
+  .swiper-container {
+    margin-right: 0;
+    width: 594px;
+    position: absolute;
+    right: 50px;
+    top: 105px;
+  }
+
+  .gallery__slide::after {
+    height: 224px;
+    width: 224px;
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+	.gallery__slide1 {
+    background-image: url(../img/gallery/gallery_1.jpg);
+  }
+  .gallery__slide2 {
+    background-image: url(../img/gallery/gallery_2.jpg);
+  }
+  .gallery__slide3 {
+    background-image: url(../img/gallery/gallery_3.jpg);
+  }
+  .gallery__slide4 {
+    background-image: url(../img/gallery/gallery_4.jpg);
+  }
+  .gallery__slide5 {
+    background-image: url(../img/gallery/gallery_5.jpg);
+  }
+  .gallery__slide6 {
+    background-image: url(../img/gallery/gallery_6.jpg);
+  }
+  .gallery__slide7 {
+    background-image: url(../img/gallery/gallery_7.jpg);
+  }
+  .gallery__slide8 {
+    background-image: url(../img/gallery/gallery_8.jpg);
+  }
+  .gallery__slide9 {
+    background-image: url(../img/gallery/gallery_9.jpg);
+  }
+  .gallery__slide10 {
+    background-image: url(../img/gallery/gallery_10.jpg);
+  }
+  .gallery__slide11 {
+    background-image: url(../img/gallery/gallery_11.jpg);
+  }
+  .gallery__slide12 {
+    background-image: url(../img/gallery/gallery_12.jpg);
+  }
+  .gallery__slide13 {
+    background-image: url(../img/gallery/gallery_13.jpg);
+  }
+  .gallery__slide14 {
+    background-image: url(../img/gallery/gallery_14.jpg);
+  }
+  .gallery__slide15 {
+    background-image: url(../img/gallery/gallery_15.jpg);
+  }
+  .gallery__slide16 {
+    background-image: url(../img/gallery/gallery_16.jpg);
+  }
+  .gallery__slide17 {
+    background-image: url(../img/gallery/gallery_17.jpg);
+  }
+  .gallery__slide18 {
+    background-image: url(../img/gallery/gallery_18.jpg);
+  }
+  .gallery__slide19 {
+    background-image: url(../img/gallery/gallery_19.jpg);
+  }
+  .gallery__slide20 {
+    background-image: url(../img/gallery/gallery_20.jpg);
+  }
+  .gallery__slide21 {
+    background-image: url(../img/gallery/gallery_21.jpg);
+  }
+  .gallery__slide22 {
+    background-image: url(../img/gallery/gallery_22.jpg);
+  }
+  .gallery__slide23 {
+    background-image: url(../img/gallery/gallery_23.jpg);
+  }
+  .gallery__slide24 {
+    background-image: url(../img/gallery/gallery_24.jpg);
+  }
+  .gallery__slide25 {
+    background-image: url(../img/gallery/gallery_25.jpg);
+  }
+  .gallery__slide26 {
+    background-image: url(../img/gallery/gallery_26.jpg);
+  }
+  .gallery__slide27 {
+    background-image: url(../img/gallery/gallery_27.jpg);
+  }
+  .gallery__slide28 {
+    background-image: url(../img/gallery/gallery_28.jpg);
+  }
+  .gallery__slide29 {
+    background-image: url(../img/gallery/gallery_29.jpg);
+  }
+  .gallery__slide30 {
+    background-image: url(../img/gallery/gallery_30.jpg);
+  }
+}
+
+@media (min-width: 1400px) {
+  .swiper-container {
+    width: 908px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .swiper-container {
+    width: 1150px;
+    height: 810px;
+  }
+
+  .gallery__slide {
+    width: 350px;
+    height: 350px;
+  }
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 2.7%;
+  }
+
+  .swiper-button-prev {
+    left: 3px;
+  }
+
+  .swiper-button-next {
+    left: 103px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 2.7%;
+  }
+
+  .swiper-button-prev {
+    left: 3px;
+  }
+
+  .swiper-button-next {
+    left: 103px;
+  }
+
+  .gallery__slide::after {
+    height: 294px;
+    width: 294px;
+  }
+
+}

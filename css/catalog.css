@@ -1,0 +1,15 @@
+.catalog {
+	margin-bottom: 40px;
+}
+
+.catalog__container {
+	display: flex;
+  flex-direction: column;
+	padding-top: 44px;
+	padding-bottom: 70px;
+	width: 100%;
+}
+
+.catalog__title {
+  margin-bottom: 22px;
+}

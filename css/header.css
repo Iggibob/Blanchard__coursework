@@ -528,6 +528,10 @@
 
 
 @media (min-width: 1200px) {
+  .header__logo {
+		width: 173px;
+	}
+
 	.header__nav,
 	.bottom-block{
 		display: inherit;
@@ -545,6 +549,8 @@
 
 	.top-block__container {
 		width: 100%;
+		padding-top: 27px;
+		padding-bottom: 30px;
 	}
 
 	.burger__block {

@@ -3,6 +3,15 @@
 @import "header.css";
 @import "hero.css";
 @import "about.css";
+@import "gallery.css";
+@import "catalog.css";
+
+
+
+@import url("https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css");
+@import "gallery_select.css";
 
 @import url("https://unpkg.com/simplebar@latest/dist/simplebar.css");
 
+@import url("https://unpkg.com/swiper/swiper-bundle.min.css");
+@import "gallery_slider.css";
