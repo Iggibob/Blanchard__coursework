@@ -4,9 +4,6 @@
 
 .gallery__block {
 	display: flex;
-  /* align-items: center; */
-  /* flex-direction: column; */
-	/* text-align: center; */
 	background: url(../img/gallery/gallery_back_mob.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -35,14 +32,17 @@
 }
 
 .gallery__select {
-	/* height: 108px; */
 	margin-bottom: 118px;
+	
 }
 
 .gallery-swiper {
 	margin-bottom: 20px;
 }
 
+.gallery__descr--left {
+	display: none;
+}
 .gallery__descr {
   color: var(--color-white);
   line-height: 2rem;
@@ -50,7 +50,32 @@
 }
 
 .gallery__descr--link {
-  color: var(--color-purple);
+	color: var(--color-purple);
+}
+
+.gallery__descr--link:hover {
+  border-bottom: 1px solid var(--color-purple);
+
+	transition-property: border-bottom;
+	transition-duration: 0.2s;
+	transition-delay: 0.2s;
+  -webkit-transition-property: border-bottom;
+	-webkit-transition-duration: 0.2s;
+	-webkit-transition-delay: 0.2s;
+  -moz-transition-property: border-bottom;
+	-moz-transition-duration: 0.2s;
+	-moz-transition-delay: 0.2s;
+  -o-transition-property: border-bottom;
+	-o-transition-duration: 0.2s;
+	-o-transition-delay: 0.2s;
+}
+.gallery__descr--link:active {
+	outline: none;
+  color: #7943A4;
+	border-bottom: 1px solid #7943A4;
+}
+.gallery__descr--link:focus {
+  outline: 2px solid #7943A4;
 }
 
 
@@ -58,7 +83,6 @@
 @media (min-width: 768px) {
 	.gallery__container {
 		padding-top: 85px;
-		/* padding-bottom: 70px; */
 	}
 	
 	.gallery__title {
@@ -85,25 +109,43 @@
 	.gallery__container {
 		position: relative;
 	}
+	.gallery__container {
+		display: flex;
+		flex-direction: row;
+		padding-bottom: 70px;
+	}
 		
-	.gallery__select {
-		margin-bottom: 366px;
+	.gallery-left {
+		display: flex;
+		flex-direction: column;
+		flex: 1 0 32%;
+		margin-right: 3.7%;
 	}
 	
-	.gallery__descr {
-		max-width: 285px;
+	.gallery__title {
+		display: flex;
 	}
+
+	.gallery__select {
+		margin-bottom: auto;
+	}
+
+	.gallery__descr--left {
+		display: inline-block;
+		color: var(--color-white);
+		line-height: 2rem;
+		font-weight: 600;
+	}
+	.gallery__descr--down {
+		display: none;
+	}
+	
 }
 
 @media (min-width: 1200px) {
 	.gallery__block {
     background: url(../img//gallery/gallery_back.jpg);
   }
-
-	/* .gallery__select {
-		max-width: 400px;
-		margin-bottom: 555px;
-	} */
 
 	.gallery__descr {
 		max-width: 400px;
@@ -112,12 +154,18 @@
 
 @media (min-width: 1700px) {
 	
+	.gallery-left {
+		flex: 1 0 20%;
+		margin-right: 2%;
+	}
+
 	.gallery__select {
 		max-width: 400px;
-		margin-bottom: 555px;
+		/* margin-bottom: auto; */
 	}
 
 	.gallery__descr {
 		max-width: 400px;
 	}
+	
 }

@@ -5,11 +5,17 @@
 .catalog__container {
 	display: flex;
   flex-direction: column;
-	padding-top: 44px;
+	padding-top: 42px;
 	padding-bottom: 70px;
 	width: 100%;
 }
 
 .catalog__title {
   margin-bottom: 22px;
+}
+
+@media (min-width: 768px) {
+	.catalog__container {
+		padding-top: 44px;
+	}
 }

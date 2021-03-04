@@ -1,6 +1,6 @@
 .swiper-container {
   width: 290px;
-  height: 417px;
+  padding: 0 0 50px 0;
 }
 
 .gallery__slide {
@@ -38,7 +38,6 @@
   -o-transition-property: opacity, visibility;
 	-o-transition-duration: 0.2s, 0.2s;
 	-o-transition-delay: 0.2s, 0.1s;
-
 }
 
 .gallery__slide:hover::after {
@@ -46,24 +45,15 @@
   visibility: visible;
 }
 
-
-
 .swiper-pagination {
   color: var(--color-white);
   bottom: 5px;
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-  height: 18px;
-}
-
-
 .swiper-button-prev,
 .swiper-button-next {
-  position: absolute;
-  top: 98%;
+  top: 96.5%;
   width: 30px;
-  height: 30px;
 }
 .swiper-button-prev {
   left: 80px;
@@ -73,6 +63,32 @@
   right: 80px;
   background: url(../img/gallery/gallery_slider_icon.svg) center center no-repeat transparent;
   transform: rotate(180deg);
+}
+.swiper-button-prev:hover {
+  background: url(../img/gallery/gallery_slider_icon-foc.svg) center center no-repeat transparent;
+  transform: rotate(180deg);
+}
+.swiper-button-next:hover {
+  background: url(../img/gallery/gallery_slider_icon-foc.svg) center center no-repeat transparent;
+  transform: rotate(0deg);
+}
+.swiper-button-prev:active {
+  background: url(../img/gallery/gallery_slider_icon-act.svg) center center no-repeat transparent;
+  transform: rotate(180deg);
+}
+.swiper-button-next:active {
+  background: url(../img/gallery/gallery_slider_icon-act.svg) center center no-repeat transparent;
+  transform: rotate(0deg);
+}
+.swiper-button-prev:focus {
+  outline: none;
+  background: url(../img/gallery/gallery_slider_icon-tab.svg) center center no-repeat transparent;
+  transform: rotate(180deg);
+}
+.swiper-button-next:focus {
+  outline: none;
+  background: url(../img/gallery/gallery_slider_icon-tab.svg) center center no-repeat transparent;
+  transform: rotate(0deg);
 }
 
 .swiper-button-next:after, .swiper-button-prev::after {
@@ -175,41 +191,43 @@
 @media (min-width: 768px) {
   .swiper-container {
     width: 668px;
-    height: 654px;
+    height: auto;
     padding-top: 60px;
+    padding-bottom: 0;
+  }
+
+  .swiper-wrapper {
+    height: 594px;
   }
 
   .gallery__slide {
     height: 280px;
-    /* width: 317px; */
+    width: 317px;
   }
 
   .swiper-pagination {
-    bottom: 0;
-    top: 7px;
-    left: 45px;
-    text-align: start;
+    bottom: 630px;
+    top: 6px;
+    left: 0;
+    width: 19.5%;
   }
   
   .swiper-button-prev,
   .swiper-button-next {
-    top: 3.3%;
-    width: 30px;
-    height: 30px;
+    top: 2.3%;
   }
   .swiper-button-prev {
-    left: 0px;
+    left: 1px;
   }
   .swiper-button-next {
-    left: 100px;
+    left: 17%;
     right: 0;
   }
 
-  
   .gallery__slide::after {
     height: 224px;
     width: 261px;
-}
+  }
 
 
 }
@@ -218,15 +236,23 @@
 @media (min-width: 1024px) {
   .swiper-container {
     margin-right: 0;
-    width: 594px;
-    position: absolute;
-    right: 50px;
-    top: 105px;
+    margin-bottom: 0;
+    padding-top: 80px;
+    padding-bottom: 10px;
   }
 
   .gallery__slide::after {
     height: 224px;
     width: 224px;
+  }
+
+  .swiper-pagination {
+    top: 27px;
+    width: 22%;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 35px;
   }
 
 }
@@ -329,43 +355,41 @@
   .swiper-container {
     width: 908px;
   }
+  
+  .swiper-pagination {
+    width: 17.6%;
+  }
+  .swiper-button-next {
+    left: 14%;
+  }
 }
 
 @media (min-width: 1700px) {
   .swiper-container {
     width: 1150px;
-    height: 810px;
   }
+
+  .swiper-wrapper {
+    height: 750px;
+  }
+  
 
   .gallery__slide {
     width: 350px;
     height: 350px;
   }
   
-  .swiper-button-prev,
-  .swiper-button-next {
-    top: 2.7%;
-  }
-
   .swiper-button-prev {
     left: 3px;
   }
 
   .swiper-button-next {
-    left: 103px;
+    left: 8.95%;
   }
 
-  .swiper-button-prev,
-  .swiper-button-next {
-    top: 2.7%;
-  }
-
-  .swiper-button-prev {
-    left: 3px;
-  }
-
-  .swiper-button-next {
-    left: 103px;
+  .swiper-pagination {
+    width: 12%;
+    bottom: 850px;
   }
 
   .gallery__slide::after {
