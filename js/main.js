@@ -53,6 +53,8 @@ window.addEventListener('DOMContentLoaded', function () {
 	// Gallery Slider
 	const swiper = new Swiper('.swiper-container', {
 		// Default parameters
+		loop: true,
+		
 		slidesPerView: 1,
 		spaceBetween: 30,
 		initialSlide: 14,
