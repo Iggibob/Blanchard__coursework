@@ -63,7 +63,7 @@ window.addEventListener('DOMContentLoaded', function () {
 		breakpoints: {
 			// when window width is >= 768px
 			768: {
-				initialSlide: 4,
+				initialSlide: 6,
 				spaceBetween: 34,
 
 				slidesPerView: 2,/*сколько колонок*/
@@ -71,28 +71,31 @@ window.addEventListener('DOMContentLoaded', function () {
 				slidesPerGroup: 2, /*на сколько передвигаются*/
 				
 				speed: 600,
+				loop: false,
 			},
 			// when window width is >= 1400px
 			1400: {
-				initialSlide: 5,
 				spaceBetween: 34,
+				initialSlide: 3,
 
-				slidesPerView: 3,/*сколько колонок*/
-				slidesPerColumn: 2, /*сколько столбцов*/
-				slidesPerGroup: 3, /*на сколько передвигаются*/
+				slidesPerView: 3,
+				slidesPerColumn: 2, 
+				slidesPerGroup: 3, 
 				
 				speed: 1000,
+				loop: false,
 			},
 			// when window width is >= 1700px
 			1700: {
-				initialSlide: 5,
 				spaceBetween: 50,
+				initialSlide: 8,
 
-				slidesPerView: 3,/*сколько колонок*/
-				slidesPerColumn: 2, /*сколько столбцов*/
-				slidesPerGroup: 3, /*на сколько передвигаются*/
+				slidesPerView: 3,
+				slidesPerColumn: 2, 
+				slidesPerGroup: 3, 
 				
 				speed: 1000,
+				loop: false,
 			}
 		},
 		
@@ -101,13 +104,14 @@ window.addEventListener('DOMContentLoaded', function () {
 		loop: true,
 		// Pagination arrows
 		pagination: {
-			el: '.swiper-pagination',
+			el: '.gallery__swiper-pagination',
 			type: 'fraction',
+			clicable: true,
 		},
 		// Navigation arrows
 		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
+			nextEl: '.gallery__swiper-button-next',
+			prevEl: '.gallery__swiper-button-prev',
 		},
 
 	});
