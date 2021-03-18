@@ -102,6 +102,7 @@ window.addEventListener('DOMContentLoaded', function () {
 		// Optional parameters
 		direction: 'horizontal',
 		loop: true,
+
 		// Pagination arrows
 		pagination: {
 			el: '.gallery__swiper-pagination',
@@ -112,6 +113,7 @@ window.addEventListener('DOMContentLoaded', function () {
 		navigation: {
 			nextEl: '.gallery__swiper-button-next',
 			prevEl: '.gallery__swiper-button-prev',
+			disabledClass: 'gallery__swiper-button-disabled',
 		},
 
 	});
