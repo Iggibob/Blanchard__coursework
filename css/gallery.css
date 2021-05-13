@@ -1,5 +1,5 @@
 .gallery {
-	margin-bottom: 41px;
+	margin-bottom: 56px;
 }
 
 .gallery__block {
@@ -56,17 +56,13 @@
   border-bottom: 1px solid var(--color-purple);
 
 	transition-property: border-bottom;
-	transition-duration: 0.2s;
-	transition-delay: 0.2s;
+	transition-duration: 1s;
   -webkit-transition-property: border-bottom;
-	-webkit-transition-duration: 0.2s;
-	-webkit-transition-delay: 0.2s;
+	-webkit-transition-duration: 1s;
   -moz-transition-property: border-bottom;
-	-moz-transition-duration: 0.2s;
-	-moz-transition-delay: 0.2s;
+	-moz-transition-duration: 1s;
   -o-transition-property: border-bottom;
-	-o-transition-duration: 0.2s;
-	-o-transition-delay: 0.2s;
+	-o-transition-duration: 1s;
 }
 .gallery__descr--link:active {
 	outline: none;

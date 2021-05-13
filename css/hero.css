@@ -8,7 +8,7 @@
   flex-direction: column;
 	text-align: center;
 	margin-top: -45px;
-	background: url(../img/hero-background-casle-mobx2.jpg);
+	background: url(../img/hero/hero-background-casle-mobx2.jpg);
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-color: transparent;
@@ -139,7 +139,7 @@
 	.hero__block {
 		margin-top: -170px;
 		height: 100%;
-		background: url(../img/hero-background-casle-1920.jpg);
+		background: url(../img/hero/hero-background-casle-1920.jpg);
 	}
 
 	.hero__container {

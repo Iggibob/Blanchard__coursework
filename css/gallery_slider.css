@@ -28,17 +28,13 @@
   opacity: 0;
 
   transition-property: opacity, visibility;
-	transition-duration: 0.2s, 0.2s;
-	transition-delay: 0.2s, 0.1s;
+	transition-duration: 1s;
   -webkit-transition-property: opacity, visibility;
-	-webkit-transition-duration: 0.2s, 0.2s;
-	-webkit-transition-delay: 0.2s, 0.1s;
+	-webkit-transition-duration: 1s;
   -moz-transition-property: opacity, visibility;
-	-moz-transition-duration: 0.2s, 0.2s;
-	-moz-transition-delay: 0.2s, 0.1s;
+	-moz-transition-duration: 1s;
   -o-transition-property: opacity, visibility;
-	-o-transition-duration: 0.2s, 0.2s;
-	-o-transition-delay: 0.2s, 0.1s;
+	-o-transition-duration: 1s;
 }
 
 .gallery__slide:hover::after {
@@ -77,36 +73,40 @@
   fill: var(--color-purple);
 
 	transition-property: fill;
-	transition-duration: 0.2s;
-	transition-delay: 0.2s;
+	transition-duration: 2s;
 	-webkit-transition-property: fill;
-	-webkit-transition-duration: 0.2s;
-	-webkit-transition-delay: 0.2s;
+	-webkit-transition-duration: 2s;
 	-moz-transition-property: fill;
-	-moz-transition-duration: 0.2s;
-	-moz-transition-delay: 0.2s;
+	-moz-transition-duration: 2s;
 	-o-transition-property: fill;
-	-o-transition-duration: 0.2s;
-	-o-transition-delay: 0.2s;
+	-o-transition-duration: 2s;
 }
 
-.gallery__swiper-button-next:active .img_swiper-button path,
-.gallery__swiper-button-prev:active .img_swiper-button path {
+.gallery__swiper-button-next:active .img_swiper-button .path-bord {
   stroke: #D1A9F0;
   fill: #7943A4;
 
 	transition-property: fill, stroke;
-	transition-duration: 0.1s, 1s;
-	transition-delay: 0.1s, 1s;
+	transition-duration: 1s;
 	-webkit-transition-property: fill, stroke;
-	-webkit-transition-duration: 1s, 1s;
-	-webkit-transition-delay: 0.1s, 0.1s;
+	-webkit-transition-duration: 1s;
 	-moz-transition-property: fill, stroke;
-	-moz-transition-duration: 1s, 1s;
-	-moz-transition-delay: 1s, 1s;
+	-moz-transition-duration: 1s;
 	-o-transition-property: fill, stroke;
-	-o-transition-duration: 1s, 1s;
-	-o-transition-delay: 0.1s, 0.1s;
+	-o-transition-duration: 1s;
+}
+.gallery__swiper-button-prev:active .img_swiper-button .path-bord {
+  stroke: #D1A9F0;
+  fill: #7943A4;
+
+	transition-property: fill, stroke;
+	transition-duration: 1s;
+	-webkit-transition-property: fill, stroke;
+	-webkit-transition-duration: 1s;
+	-moz-transition-property: fill, stroke;
+	-moz-transition-duration: 1s;
+	-o-transition-property: fill, stroke;
+	-o-transition-duration: 1s;
 }
 
 .gallery__swiper-button-next:focus,
@@ -119,34 +119,27 @@
   stroke: #7943A4;
 
 	transition-property: fill, stroke;
-	transition-duration: 0.1s, 0.1s;
-	transition-delay: 0.2s, 0.2s;
+	transition-duration: 1s;
 	-webkit-transition-property: fill, stroke;
-	-webkit-transition-duration: 0.1s, 0.1s;
-	-webkit-transition-delay: 0.2s, 0.2s;
+	-webkit-transition-duration: 1s;
 	-moz-transition-property: fill, stroke;
-	-moz-transition-duration: 0.1s, 0.1s;
-	-moz-transition-delay: 0.2s, 0.2s;
+	-moz-transition-duration: 1s;
 	-o-transition-property: fill, stroke;
-	-o-transition-duration: 0.1s, 0.1s;
-	-o-transition-delay: 0.2s, 0.2s;
+	-o-transition-duration: 1s;
 }
 
 .gallery__swiper-button-disabled {
-  opacity: 0.4;
+  opacity: 0.5;
+  pointer-events: none;
 
   transition-property: opacity;
-	transition-duration: .2s;
-	transition-delay: .2s;
+	transition-duration: 1s;
 	-webkit-transition-property: opacity;
-	-webkit-transition-duration: .2s;
-	-webkit-transition-delay: .2s;
+	-webkit-transition-duration: 1s;
 	-moz-transition-property: opacity;
-	-moz-transition-duration: .2s;
-	-moz-transition-delay: .2s;
+	-moz-transition-duration: 1s;
 	-o-transition-property: opacity;
-	-o-transition-duration: .2s;
-	-o-transition-delay: .2s;
+	-o-transition-duration: 1s;
 } 
 
 .gallery__swiper-button-disabled:hover .img_swiper-button path {
