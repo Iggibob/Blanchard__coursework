@@ -118,4 +118,65 @@ window.addEventListener('DOMContentLoaded', function () {
 
 	});
 	
+
+	// Accordion
+	$( function() {
+		$( "#accordion_france" ).accordion({
+			active: 4,
+			heightStyle: "content"
+		});
+		$( "#accordion_germany" ).accordion({
+			active: false,
+			heightStyle: "content"
+		});
+		$( "#accordion_italy" ).accordion({
+			active: 0,
+			heightStyle: "content"
+		});
+		$( "#accordion_russia" ).accordion({
+			active: 3,
+			heightStyle: "content",
+		});
+		$( "#accordion_belgium" ).accordion({
+			collapsible: true,
+			active: false,
+			heightStyle: "content"
+		}, 300);
+  });
+
+	// Смена стран для Accordion и внутри него смена инфы по художникам
+	$('.catalog__tab--nav a').on('click', function(catalogCountry){
+		// console.log('asd')
+		// e.preventDefault(); //отменяем переход по ссылке куда-то
+		// let href = $(this).attr('href');
+		// // console.log(href)
+		// $('.tab-plane').removeClass('active');
+		// $(href).addClass('active');
+
+		catalogCountry.preventDefault();
+		$('.catalog__tab--nav a').removeClass('active');
+		$(this).addClass('active');
+		let href = $(this).attr('href');
+		$('.catalog__tab--plane').removeClass('active').removeClass('in');
+		$(href).addClass('active');
+
+		setTimeout(function(){
+			$(href).addClass('in');
+		}, 300);
+
+	});
+
+	$('.catalog__accordion--nav a').on('click', function(catalogPainter){  
+		catalogPainter.preventDefault();
+		$('.catalog__accordion--nav a').removeClass('active');
+		$(this).addClass('active');
+		let href = $(this).attr('href');
+		$('.catalog__card').removeClass('active').removeClass('in');
+		$(href).addClass('active');
+
+		setTimeout(function(){
+			$(href).addClass('in');
+		}, 300);
+	});
+
 });
